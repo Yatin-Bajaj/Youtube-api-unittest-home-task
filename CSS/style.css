@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    max-height: 100%;
+}
+
+.header {
+    background-color: #222;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: aliceblue;
+
+}
+
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#user-input {
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: aliceblue;
+}
+
+#search-btn {
+    padding: 5px 20px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 10px;
+}
+
+.card {
+    color: #000;
+    background-color: #fff;
+    -webkit-box-shadow: 11px 2px 17px -15px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 11px 2px 17px -15px rgba(0, 0, 0, 0.51);
+    box-shadow: 11px 2px 17px -15px rgba(0, 0, 0, 0.51);
+    max-width: 300px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.card-figure {
+    margin: 0;
+}
+
+.card-figure img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    min-height: 100px;
+    line-height: 1.5;
+}
+
+.movie-title {
+    margin: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.75em;
+}
+
+.author,
+.description,
+.publish_date {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-info span {
+    font-weight: 400;
+}
+
+
+.link_btn {
+    display: inline-block;
+    background-color: green;
+    padding: 5px 25px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0px 10px 10px 0px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#previous_btn,
+#next_btn {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.pagination_button {
+    /* styling for all number buttons */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+
+@media screen and (max-width: 480px) {
+   .header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+   #user-input{
+    margin-bottom: 5px;
+   }
+}
